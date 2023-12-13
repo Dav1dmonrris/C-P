@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(int argc, char const *argv[])
+{
+
+	setlocale(LC_ALL, "spanish");
+	int x;
+	int i;
+
+	printf("Bucles en lenguaje\n");
+	printf("WHILE, DO WHILE Y FOR\n");
+
+	printf("Bucle while- mientras\n");
+	printf("contador de incremento\n");
+
+	x=1;
+
+	while(x <=10){
+		printf("el valor es %d\n", x++);
+	}
+
+    printf("Bucle for-para\n");
+	printf("Contador en decremento\n");
+
+
+	for (i = 1; i <= 10; ++i)
+	{
+		printf("El valor de i es %d\n", i);
+	}
+
+	printf("contador en decremento\n");
+	for (i = 10; i >=6; --i)
+	{
+		printf("El valor de i es %d\n", i);
+	}
+
+    int x;
+    
+    printf("Bucle Do While- hacer mientras\n");
+     x=2;
+     
+     do {
+     	printf("El valor de x es %d\n", x++);
+     	x++;
+     } while(x<=10);
+
+    printf("Ejemplos aplicados con los bucles\n");
+
+
+	getch();
+	return 0;
+}
