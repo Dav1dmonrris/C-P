@@ -1,0 +1,65 @@
+//condicionesaritmeticas.h
+#include <stdio.h>
+#include <locale.h>
+
+int main(int argc, char const *argv[])
+{
+	setlocale(LC_ALL, "spanish");
+	int numero, a, b, resultado;
+
+	printf("OPERADOR SWITCH(CAMBIO)\n");
+	
+
+	printf("Ingrese un numero\n");
+	scanf("%d""%d", &a, &b);
+	
+
+    printf("1.suma\n");
+	printf("2.resta\n");
+	printf("3.multiplicacion\n");
+	printf("4.division\n");
+	printf("5.modulo\n");
+
+ printf("¿Que operacion quiere hacer?\n");
+	scanf("%d",&numero );
+
+	
+switch(numero){
+    case 1:
+
+    	resultado= a + b;
+    	printf("Sumar %d + %d es %i\n",a, b, resultado);
+    	break;
+
+    case 2:
+
+    	resultado= a - b;
+    	printf("Sumar %d - %d es %i\n",a, b, resultado);
+    	break;
+
+    case 3:
+
+    	resultado= a * b;
+    	printf("Sumar %d * %d es %i\n",a, b, resultado);
+    	break;
+
+    case 4:
+
+    	resultado= a / b;
+    	printf("Sumar %d / %d es %i\n",a, b, resultado);
+    	break;
+
+    case 5:
+
+    	resultado= a % b;
+    	printf("Sumar %d %% %d es %i\n",a, b, resultado);
+    	break;
+
+    default:
+    	printf("Opcion incorrecta\n");
+    	break;
+
+}
+    getch();
+    return 0;
+}
