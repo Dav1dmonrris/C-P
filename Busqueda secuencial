@@ -1,0 +1,38 @@
+//busqueda.h soy el mejor
+#include <stdio.h>
+
+int encuentra(int A[], int b) {
+    int k = 0; 
+    int result = -1;
+    
+    while (k < 10) {
+        if (A[k] == b) {
+            result = k;
+            break; 
+        } else {
+            k++;
+        }
+    }
+    
+    return result;
+}
+
+int main() {
+    int i, x[10];
+    
+    for (i = 0; i < 10; i++) {
+        scanf("%d", &x[i]);
+    }
+    
+    int valor = 10; 
+    int indice = encuentra(x, valor);
+    
+    if (indice != -1) {
+        printf("El valor %d se encuentra en la posición %d del arreglo.\n", valor, indice);
+    } else {
+        printf("El valor %d no se encontró en el arreglo.\n", valor);
+    }
+    
+    getch();
+    return 0;
+}
