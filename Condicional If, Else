@@ -1,0 +1,41 @@
+//condicionales.h
+#include <stdio.h>
+#include <locale.h>
+
+int main(int argc, char const *argv[])
+{
+	setlocale(LC_ALL, "spanish");
+	char genero;
+	int clima;
+
+	printf("Operadores condicionales\n");
+	printf("If, else, else if y switch\n");
+
+	printf("selecciona tu genero\n");
+	printf("f. Femenino\n");
+	printf("m. masculino\n");
+
+	scanf("%condicionales", &genero);
+	if(genero=='f'){
+		printf("Hola srita.\n");
+	}
+	else {
+		printf("Hola srito.\n");
+	}
+
+	printf("¿Como esta el clima?\n" );
+printf("1. lloviendo\n" );
+printf("2. soleado\n" );
+
+scanf("%d", &clima);
+
+if (clima==1)
+{
+	printf("LLeva paraguas\n");
+}else {
+	printf("Bloqueador solar\n");
+}
+
+    getch();
+	return 0;
+}
