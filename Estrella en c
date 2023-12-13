@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <locale.h>
+
+
+main() {
+
+	printf("                  O\n");
+	printf("      O          O O         O\n");
+	printf("       O O      O   O     O O\n");
+	printf("        O  O   O     O  O  O\n");
+	printf("          O   O       O   O\n");
+	printf("           O             O\n");
+	printf("            O           O\n");
+	printf("            O           O\n");
+	printf("           O             O\n");
+	printf("          O     O O O     O\n");
+	printf("         O    O       O    O\n");
+	printf("        O   O           O   O\n");
+	printf("       O  O               O  O\n");
+	printf("      O O                   O O\n");
+	
+
+
+	getch();
+	return 0;
+}
