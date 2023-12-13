@@ -1,0 +1,35 @@
+//Funcion_handles.h
+//funcion-potencia.c
+#include <stdio.h>
+#include <locale.h>
+#include <windows.h>
+
+
+int main(int argc, char const *argv[])
+{
+	setlocale(LC_ALL, "spanish");
+	int x;
+
+	system("color 71");
+    
+    gotoxy(20,10);
+	printf("estoy en la coordenada x=10; y=10\n");
+
+	
+
+
+
+	getch();
+	return 0;
+}
+gotoxy(int X, int Y){
+	int x, y;
+	HANDLE hcon;
+	hcon=GetStdHandle(STD_OUTPUT_HANDLE);
+	COORD dwPos;
+	dwPos, X=x;
+	dwPos, Y=y;
+	SetConsoleCursorPosition(hcon, dwPos);
+	
+
+}
