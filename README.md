@@ -3,7 +3,7 @@
 Repositorio donde agregare todos los ejercicios con el Lenguaje de programacion C
 
 <div align="center">
-   <img src="LenguajeC2.jpg" alt="C" width=""/>
+   <img src="LenguajeC2.png" alt="C" width=""/>
 </div>
 
 ##  Contenido
