@@ -1,1 +1,14 @@
-Aqui esta todo mi progreso en el lenguaje c
+
+# _Lenguaje de programacion C_
+Repositorio donde agregare todos los ejercicios con el Lenguaje de programacion C
+
+<div align="center">
+   <img src="Terminal2.jpg" alt="Terminal" width="500"/>
+</div>
+
+##  Contenido
+
+-  Actividades de la Universidad
+-  Ejercicios propios
+-  y ya
+
