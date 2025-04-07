@@ -1,0 +1,45 @@
+//arrays_matrices.h
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+
+int main()
+{
+	setlocale(LC_ALL, "spanish");
+
+   printf("Arrays y matrices en lenguaje c\n");
+
+
+   printf("Arreglos numericos\n");
+
+   int numeros[5], i;
+   numeros [1]=100;
+   numeros[2]=200;
+   numeros[3]=300;
+   numeros[4]=400;
+   numeros[5]=500;
+
+   for ( i = 1; i <= 5; ++i)
+   {
+   	printf("%d\n",  numeros[i]);
+   }
+
+   printf("Arreglos alfanumericos\n");
+
+   char datosPersonales[4][50]={"numbre: Josefina", "edad: 70años", "altura: 2metros"};
+
+   printf("%s\n", datosPersonales[1]);
+
+   for ( i = 1; i <= 3; ++i)
+   {
+   	printf("%s\n",  datosPersonales[i]);
+   }
+
+
+	
+
+
+
+	getch();
+	return 0;
+}

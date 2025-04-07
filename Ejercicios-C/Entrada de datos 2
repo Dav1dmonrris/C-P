@@ -1,0 +1,90 @@
+#include <stdio.h>
+#include <locale.h>
+
+main () {
+
+	setlocale(LC_ALL, "SPANISH");
+	/*Crear un proyecto con printf, scanf, puts, gets, putchar, fgets.*/
+
+	char nombre[50];
+	char direccion[100];
+	char genero;
+	int telefono;
+	int edad[3];
+	float altura;
+	float peso[10];
+	char tipo_sangre[10];
+	char talla[10];
+	char color_fav[15];
+
+printf("Introduce tus datos personales:\n");
+
+
+	printf("Ecriba su nombre:\n");
+	gets(nombre);
+
+	printf("Escriba su direccion:\n");
+	fgets(direccion, 100, stdin);
+
+	printf("Escriba su genero:\n" );
+
+	printf("Escriba su telefono:\n" );
+	gets(telefono);
+
+	printf("Escriba su edad:\n" );
+	gets(edad);
+
+	printf("Escriba su altura:\n" );
+	gets(altura);
+
+	printf("Escriba su peso:\n");
+	gets(peso);
+
+	printf("Su tipo de sangre:\n" );
+	gets(tipo_sangre);
+
+	printf("Su talla:\n" );
+	gets(talla);
+
+	printf("Su color favorito:\n" );
+	gets(color_fav);
+
+
+	//Tus datos:
+
+    printf("Tu nombre es:");
+	puts(nombre);
+	putchar('\n');
+
+    printf("Tu direccion es: ");
+    puts(direccion);putchar('\n');
+
+    printf("Tu genero es: ");
+    puts(genero);putchar('\n');
+
+    printf("tu telefono es: ");
+    puts(telefono);putchar('\n');
+
+    printf("edad: ");
+    puts(edad);putchar('\n');
+
+    printf("altura: ");
+    puts(altura);putchar('\n');
+
+    printf("peso: ");
+    puts(peso);putchar('\n');
+
+    printf("Tipo de sangre: ");
+    puts(tipo_sangre);putchar('\n');
+
+    printf("Talla: ");
+    puts(talla);putchar('\n');
+
+    printf("Color:");
+    puts(color_fav);putchar('\n');
+
+
+getch ();
+return 0;
+
+}

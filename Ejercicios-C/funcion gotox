@@ -1,0 +1,35 @@
+//funcion-potencia.c
+#include <stdio.h>
+#include <locale.h>
+
+
+int main(int argc, char const *argv[])
+{
+	setlocale(LC_ALL, "spanish");
+	int numero;
+
+	printf("conversion de decimal a binario\n");
+
+	printf("Ingresa un numero entero\n");
+	scanf("%d", &numero);
+
+
+    printf("El numero binario es:\n" );
+    binario(numero);
+ 
+
+
+	getch();
+	return 0;
+}
+binario(int numero){
+	int auxiliar;
+	if (numero=0)
+
+		return;
+	auxiliar=numero%2;
+	numero=numero/2;
+	binario(numero);
+	printf("%d", auxiliar);
+
+}

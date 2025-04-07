@@ -1,0 +1,114 @@
+//coordenadas.h
+
+#include <stdio.h>
+#include <windows.h>
+
+
+int main()
+{
+	
+	int x, d;
+
+	system("color 71");
+    
+    gotoxy(40,40);
+	printf("%c", 201);//superior izquierda
+	
+	for(x=1; x<=50; x++){
+		printf("%c", 205 );
+	} 
+	   printf("%c", 203); //mitad superior
+
+	for(x=1; x<=50; x++){
+		printf("%c", 205 );
+	}
+	  printf("%c", 187); //superior derecha
+   
+    putchar('\n');
+   printf("%c", 186);
+   for(x=2; x<=51; x++){
+		printf(" ");
+	}
+	printf("%c", 186);
+	for(x=2; x<=51; x++){
+		printf(" ");
+	}
+	printf("%c", 186);
+
+	    putchar('\n');
+   printf("%c", 186);
+   for(x=2; x<=51; x++){
+		printf(" ");
+	}
+	printf("%c", 186);
+	for(x=2; x<=51; x++){
+		printf(" ");
+	}
+	printf("%c", 186);
+
+	do { 
+		 putchar('\n');
+		 printf("%c", 186);
+   for(x=2; x<=51; x++){
+		printf(" ");
+	}
+	printf("%c", 186);
+	for(x=2; x<=51; x++){
+		printf(" ");
+	}
+	break;
+
+	}while(d=1, d<=90, d++);
+
+
+	for(x=1; x<=12; x++){
+	   printf("%c\n", 186);
+	}
+	printf("%c", 204); //mitad izquierda
+	
+	for(x=1; x<=50; x++){
+		printf("%c", 205 );
+	}
+	printf("%c", 206);  //punto medio
+   
+	for(x=1; x<=50; x++){
+		printf("%c", 205 );
+	}
+	printf("%c", 185); //mitad derecha
+
+	putchar('\n');
+
+    for(x=1; x<=12; x++){
+	   printf("%c\n", 186);
+	}
+    printf("%c\n", 186);
+	
+	printf("%c",200); //inferior izquierda
+	for(x=1; x<=50; x++){
+		printf("%c", 205 );
+	}
+	printf("%c", 202);  //mitad inferior
+
+	for(x=1; x<=50; x++){
+		printf("%c", 205 );
+	}
+	printf("%c", 188); //inferior derecha
+
+
+
+
+
+	getch();
+	return 0;
+}
+gotoxy(int X, int Y){
+	int x, y;
+	HANDLE hcon;
+	hcon=GetStdHandle(STD_OUTPUT_HANDLE);
+	COORD dwPos;
+	dwPos, X=x;
+	dwPos, Y=y;
+	SetConsoleCursorPosition(hcon, dwPos);
+	
+
+}
